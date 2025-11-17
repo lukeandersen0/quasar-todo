@@ -9,11 +9,13 @@
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
+    "postinstall": "quasar prepare",
     "build": "quasar build",
-    "postinstall": "quasar prepare"
+    "deploy": "vercel"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
+    "firebase": "^12.6.0",
     "quasar": "^2.16.0",
     "vue": "^3.5.22",
     "vue-router": "^4.0.0"
